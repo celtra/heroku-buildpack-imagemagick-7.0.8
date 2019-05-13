@@ -70,10 +70,10 @@ IM_INSTALL_DIR="$IM_PREFIX/imagemagick"
 
 # Compile and install the imagick package
 echo "-----> Downloading imagick package"
-IMAGICK_URL="http://pecl.php.net/get/imagick"
+IMAGICK_URL="https://s3.amazonaws.com/celtra-algorithmic-creative/libraries/imagick-3.4.4.tgz"
 wget $IMAGICK_URL | indent
 tar zxvf imagick
-cd imagick-3.4.3
+cd imagick-3.4.4
 phpize
 export PKG_CONFIG_PATH=$INSTALL_DIR/lib/pkgconfig
 # $INSTALL_DIR/include/ImageMagick is a link to a directory which might not exist, so we remove it
