@@ -72,7 +72,7 @@ IM_INSTALL_DIR="$IM_PREFIX/imagemagick"
 echo "-----> Downloading imagick package"
 IMAGICK_URL="https://s3.amazonaws.com/celtra-algorithmic-creative/libraries/imagick-3.4.4.tgz"
 wget $IMAGICK_URL | indent
-tar zxvf imagick
+tar zxvf imagick-3.4.4.tgz
 cd imagick-3.4.4
 phpize
 export PKG_CONFIG_PATH=$INSTALL_DIR/lib/pkgconfig
